@@ -1,0 +1,20 @@
+{
+  "name": "house-of-hummus-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "serve --listen ${PORT:-8080}",
+    "test": "cypress run",
+    "test:ci": "start-server-and-test start-server http://localhost:8080 test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.9.1",
+    "start-server-and-test": "^1.12.1"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
