@@ -14,7 +14,7 @@ export const Sides = () => {
 
     const listItems = sideDishes.map(dish => {
         return `<li>
-            <input type="radio" />
+            <input type="radio" name="sideDish" value="${dish.id}"/>${dish.name}
         </li>`
     })
 
